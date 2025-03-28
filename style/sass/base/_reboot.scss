@@ -13,7 +13,8 @@
 }
 
 .darkmode {
-  background-color: #000;
+  background-color: #121212;
+  // background-image: none;
   --light-color: #151515;
   --main-color: #897261;
   --light-grey-color: #151515;
@@ -35,7 +36,7 @@
   }
   .footer::after {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      #0d0d0d;
+      #121212;
   }
   .footer-item::after {
     background-color: #3a3a3a;

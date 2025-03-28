@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.add("darkmode");
     localStorage.setItem("darkmode", "active");
     changeModeBtn.querySelector(".icon").classList.add("fa-moon");
-    changeModeBtn.querySelector(".icon").classList.add("text-white");
+    changeModeBtn.querySelector(".icon").classList.add("text-black");
     changeModeBtn.querySelector(".icon").classList.remove("fa-sun-bright");
   };
 
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.remove("darkmode");
     localStorage.setItem("darkmode", null);
     changeModeBtn.querySelector(".icon").classList.remove("fa-moon");
-    changeModeBtn.querySelector(".icon").classList.remove("text-white");
+    changeModeBtn.querySelector(".icon").classList.remove("text-black");
     changeModeBtn.querySelector(".icon").classList.add("fa-sun-bright");
   };
 

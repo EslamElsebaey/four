@@ -106,7 +106,7 @@
 }
 
 .darkmode {
-  background-color: #000;
+  background-color: #121212;
   --light-color: #151515;
   --main-color: #897261;
   --light-grey-color: #151515;
@@ -127,7 +127,7 @@
   border-color: #3a3a3a;
 }
 .darkmode .footer::after {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #0d0d0d;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #121212;
 }
 .darkmode .footer-item::after {
   background-color: #3a3a3a;
@@ -1154,8 +1154,8 @@ html[dir=ltr] .vr-tech .swiper-button-prev {
 .whatsapp-mail-wrapper a {
   width: 64px;
   height: 64px;
-  background-color: var(--white-color);
-  border: 1px solid var(--second-light-color);
+  background-color: #fff;
+  border: 1px solid dad0c8;
 }
 .whatsapp-mail-wrapper a:hover img {
   transform: scale(1.1);
@@ -1179,7 +1179,7 @@ html[dir=ltr] .vr-tech .swiper-button-prev {
   bottom: 53px;
   right: 49px;
   z-index: 10;
-  background-color: var(--white-color);
+  background-color: #fff;
   border: 1px solid transparent;
   width: 63px;
   height: 63px;
@@ -1202,8 +1202,8 @@ html[dir=ltr] .vr-tech .swiper-button-prev {
     font-size: 22px;
   }
 }
-#changeModeBtn .icon.text-white {
-  color: #fff;
+#changeModeBtn .icon.text-black {
+  color: #000;
 }
 
 .preloader {
@@ -1214,7 +1214,7 @@ html[dir=ltr] .vr-tech .swiper-button-prev {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   inset: 0;
   z-index: 100;
   row-gap: 30px;
@@ -1714,6 +1714,7 @@ html[dir=ltr] .exp-years-content .num-content .text {
   color: #fff;
   margin-bottom: 0;
   writing-mode: sideways-lr;
+  -webkit-writing-mode: sideways-lr;
 }
 .exp-years-content .text-content .ar-text {
   font-size: 124px;
