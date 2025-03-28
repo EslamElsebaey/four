@@ -889,8 +889,7 @@ html[dir=ltr] .footer-item .links-list .link:hover {
 }
 @media only screen and (max-width: 767px) {
   .language a {
-    padding-block: 10px;
-    padding-inline: 15px;
+    padding: 5px 15px 10px;
     line-height: 2;
   }
 }
