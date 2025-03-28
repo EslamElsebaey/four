@@ -257,11 +257,11 @@
     width: calc(100% - 2px);
     height: calc(100% - 2px);
     @extend %flex-center;
-    background-color: var(--white-color);
+    background-color: #fff;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     transition: all ease 0.5s;
     .icon {
-      color: var(--black-color);
+      color: #000;
       font-size: 20px;
       transition: all linear 0.3s;
       @include max-768 {

@@ -548,13 +548,13 @@ html[dir=ltr] .footer-item .links-list .link:hover {
 .copyright .toTopBtn {
   width: calc(100% - 2px);
   height: calc(100% - 2px);
-  background-color: var(--white-color);
+  background-color: #fff;
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   transition: all ease 0.5s;
 }
 .copyright .toTopBtn .icon {
-  color: var(--black-color);
+  color: #000;
   font-size: 20px;
   transition: all linear 0.3s;
 }
