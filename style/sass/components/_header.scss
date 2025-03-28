@@ -219,6 +219,7 @@
     @include max-768 {
       padding-block: 10px;
       padding-inline: 15px;
+      line-height: 2;
     }
     &:hover {
       color: #fff;
