@@ -1658,6 +1658,11 @@ html[dir=ltr] .exp-years-content {
   flex-direction: column;
   align-items: center;
 }
+@media only screen and (max-width: 767px) {
+  .exp-years-content .num-content {
+    transform: translateX(-5px);
+  }
+}
 .exp-years-content .num-content img {
   width: 188px;
 }
@@ -1706,7 +1711,8 @@ html[dir=ltr] .exp-years-content .num-content .text {
 }
 @media only screen and (max-width: 767px) {
   .exp-years-content .text-content {
-    margin-top: -10px;
+    margin-top: -12px;
+    transform: translateX(5px);
   }
 }
 .exp-years-content .text-content .en-text,
