@@ -1704,6 +1704,11 @@ html[dir=ltr] .exp-years-content .num-content .text {
   align-items: center;
   margin-top: -20px;
 }
+@media only screen and (max-width: 767px) {
+  .exp-years-content .text-content {
+    margin-top: -10px;
+  }
+}
 .exp-years-content .text-content .en-text,
 .exp-years-content .text-content .ar-text {
   font-weight: 700;

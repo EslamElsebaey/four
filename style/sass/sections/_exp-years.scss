@@ -102,6 +102,9 @@
     direction: ltr;
     align-items: center;
     margin-top: -20px;
+    @include max-768 {
+      margin-top: -10px;
+    }
     .en-text,
     .ar-text {
       font-weight: 700;
