@@ -46,11 +46,20 @@
   }
   @include max-1500 {
     margin-inline-start: 70px;
+    @include en {
+      margin-inline-start: 50px;
+    }
   }
   @include max-1400 {
     margin-inline-start: 30px;
+    @include en {
+      margin-inline-start: 20px;
+    }
   }
   @include max-1200 {
+    @include en {
+      margin-inline-start: unset;
+    }
     position: fixed;
     inset-inline-start: -100%;
     background-color: #000;
@@ -75,7 +84,6 @@
   display: flex;
   align-items: center;
   gap: 30px;
-
   @include max-1400 {
     gap: 20px;
   }
@@ -90,8 +98,18 @@
     @include max-1200 {
       margin-top: 60px;
     }
-    @include en {
-      @include max-1600 {
+    @include max-1600 {
+      @include en {
+        gap: 25px;
+      }
+    }
+    @include max-1400 {
+      @include en {
+        gap: 18px;
+      }
+    }
+    @include max-768 {
+      @include en {
         gap: 15px;
       }
     }
@@ -102,13 +120,26 @@
     @include max-1700 {
       margin-inline-start: 90px;
     }
+    @include max-1600 {
+      @include en {
+        gap: 40px;
+        margin-inline-start: 70px;
+      }
+    }
     @include max-1500 {
       margin-inline-start: 50px;
     }
     @include max-1400 {
       gap: 30px;
+      @include en {
+        margin-inline-start: 50px;
+      }
     }
     @include max-1200 {
+      @include en {
+        margin-inline-start: unset;
+        gap: 15px;
+      }
       margin: 0;
       margin-top: 15px;
       gap: 15px;
@@ -123,6 +154,11 @@
         position: absolute;
         inset-inline-end: -26px;
         background-color: rgba($color: #fff, $alpha: 0.2);
+        @include max-1600 {
+          @include en {
+            inset-inline-end: -20px;
+          }
+        }
         @include max-1400 {
           inset-inline-end: -15px;
         }
@@ -193,13 +229,24 @@
   @include max-1700 {
     margin-inline-start: 95px;
   }
+  @include max-1600 {
+    @include en {
+      margin-inline-start: 70px;
+    }
+  }
   @include max-1500 {
     margin-inline-start: 70px;
   }
   @include max-1400 {
     margin-inline-start: 40px;
+    @include en {
+      margin-inline-start: 30px;
+    }
   }
   @include max-768 {
+    @include en {
+      margin: 0;
+    }
     margin: 0;
     gap: 10px;
   }

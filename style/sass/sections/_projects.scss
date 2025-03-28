@@ -186,6 +186,9 @@
       color: #fff;
       margin: 17px 0;
       text-align: center;
+      @include en {
+        line-height: 1.2;
+      }
       @include max-768 {
         font-size: 18px;
         line-height: 1.2;
