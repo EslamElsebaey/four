@@ -863,7 +863,7 @@ html[dir=ltr] .footer-item .links-list .link:hover {
 @media only screen and (max-width: 767px) {
   .language {
     margin: 0;
-    gap: 10px;
+    gap: 0px;
   }
   html[dir=ltr] .language {
     margin: 0;
