@@ -119,9 +119,6 @@
 .darkmode .achievements::after {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(1843%) hue-rotate(316deg) brightness(83%) contrast(84%);
 }
-.darkmode #changeModeBtn {
-  border-color: #838383;
-}
 .darkmode .client-item,
 .darkmode .clients .swiper-slide-active .client-item {
   border-color: #3a3a3a;
@@ -1180,7 +1177,6 @@ html[dir=ltr] .vr-tech .swiper-button-prev {
   right: 49px;
   z-index: 10;
   background-color: #fff;
-  border: 1px solid transparent;
   width: 63px;
   height: 63px;
   filter: drop-shadow(-79.2642px 60.9688px 80px rgba(0, 0, 0, 0.27)) drop-shadow(-15.8528px 12.1938px 13px rgba(0, 0, 0, 0.135));

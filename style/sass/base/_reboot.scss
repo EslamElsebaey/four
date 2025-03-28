@@ -27,9 +27,6 @@
     filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(1843%)
       hue-rotate(316deg) brightness(83%) contrast(84%);
   }
-  #changeModeBtn {
-    border-color: #838383;
-  }
   .client-item,
   .clients .swiper-slide-active .client-item {
     border-color: #3a3a3a;
