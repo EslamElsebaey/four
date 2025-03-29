@@ -1259,7 +1259,8 @@ html[dir=ltr] .vr-tech .swiper-button-prev {
   align-items: center;
   width: 100%;
   height: 100dvh;
-  inset: 0;
+  top: 0;
+  left: 0;
   z-index: 100;
   row-gap: 30px;
   flex-direction: column;
@@ -1441,6 +1442,11 @@ html[dir=ltr] .main-wrapper .info-title {
 html[dir=ltr] .img-clipped {
   -webkit-clip-path: polygon(50% 0, 0% 0%, 0% 100%, 100% 100%, 100% 53%);
           clip-path: polygon(50% 0, 0% 0%, 0% 100%, 100% 100%, 100% 53%);
+}
+@media only screen and (max-width: 1399px) {
+  .img-clipped {
+    height: 580px;
+  }
 }
 @media only screen and (max-width: 1199px) {
   .img-clipped {

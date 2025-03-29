@@ -119,6 +119,9 @@
   }
   background-color: #fff;
   @extend %flex-center;
+  @include max-1400{
+    height: 580px;
+  }
   @include max-1200 {
     height: 500px;
   }
