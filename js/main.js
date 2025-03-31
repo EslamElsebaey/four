@@ -12,6 +12,18 @@ window.addEventListener("load", function () {
   }, 100);
 
   document.body.classList.remove("overflowHidden");
+
+  //**************************************************************************************************
+
+  // Aos Animate
+ AOS.init({
+   once: true,
+ });
+
+
+
+
+
 });
 
 document.addEventListener("DOMContentLoaded", function () {

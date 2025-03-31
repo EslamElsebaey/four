@@ -75,6 +75,15 @@
     margin-bottom: 0;
     padding-inline-end: 15px;
     text-align: start;
+    transition: all ease 0.4s;
+    &:hover{
+      color: var(--main-color);
+      transform: translateX(-10px);
+      @include en {
+      transform: translateX(15px);
+
+      }
+    }
     @include max-768 {
       inset-inline-start: unset;
       left: 50%;

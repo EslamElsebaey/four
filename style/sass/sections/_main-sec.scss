@@ -7,6 +7,7 @@
   padding-block: 168px;
   padding-inline-end: 30px;
   position: relative;
+  overflow: hidden;
   &::after {
     content: "";
     width: 168px;

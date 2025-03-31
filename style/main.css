@@ -665,8 +665,19 @@ html[dir=ltr] .footer-item .links-list .link:hover {
   html[dir=ltr] .navigation {
     margin-inline-start: unset;
   }
+  .navigation .nav-list {
+    transform: matrix(1, 0, 0, 1, 0, 20);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0.3s;
+  }
   .navigation.show-navigation {
     inset-inline-start: 0;
+  }
+  .navigation.show-navigation .nav-list {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -683,7 +694,11 @@ html[dir=ltr] .footer-item .links-list .link:hover {
 @media only screen and (max-width: 1199px) {
   .nav-list {
     flex-direction: column;
-    align-items: flex-start;
+    align-self: center;
+    align-items: center;
+  }
+  .nav-list li {
+    text-align: center;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -744,14 +759,34 @@ html[dir=ltr] .footer-item .links-list .link:hover {
     margin: 0;
     margin-top: 15px;
     gap: 15px;
+    width: 100%;
   }
   html[dir=ltr] .nav-list:nth-of-type(2) {
     margin-inline-start: unset;
     gap: 15px;
   }
+  .nav-list:nth-of-type(2) li {
+    width: 100%;
+  }
 }
 .nav-list:nth-of-type(2) .nav-link {
   position: relative;
+}
+@media only screen and (max-width: 1199px) {
+  .nav-list:nth-of-type(2) .nav-link {
+    width: 100%;
+    z-index: 2;
+    max-width: 150px;
+  }
+  html[dir=ltr] .nav-list:nth-of-type(2) .nav-link {
+    max-width: 165px;
+  }
+  .nav-list:nth-of-type(2) .nav-link:hover {
+    color: #fff;
+  }
+  .nav-list:nth-of-type(2) .nav-link:hover::after {
+    background-color: #8f735f;
+  }
 }
 .nav-list:nth-of-type(2) .nav-link::after {
   content: "";
@@ -773,11 +808,25 @@ html[dir=ltr] .footer-item .links-list .link:hover {
 }
 @media only screen and (max-width: 1199px) {
   .nav-list:nth-of-type(2) .nav-link::after {
-    display: none;
+    inset-inline-end: -15px;
+    top: 53%;
+    inset-inline-end: unset;
+    left: 50%;
+    width: 100%;
+    height: 35px;
+    transform: translate(-50%, -50%);
+    transition: all linear 0.2s;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }
 .nav-list:nth-of-type(2) li:last-of-type .nav-link::after {
   display: none;
+}
+@media only screen and (max-width: 1199px) {
+  .nav-list:nth-of-type(2) li:last-of-type .nav-link::after {
+    display: block;
+  }
 }
 .nav-list .nav-link {
   color: #fff;
@@ -1306,6 +1355,7 @@ html[dir=ltr] .vr-tech .swiper-button-prev {
   padding-block: 168px;
   padding-inline-end: 30px;
   position: relative;
+  overflow: hidden;
 }
 .main::after {
   content: "";
@@ -2133,6 +2183,14 @@ html[dir=ltr] .project-details-wrapper .details-item .title {
   margin-bottom: 0;
   padding-inline-end: 15px;
   text-align: start;
+  transition: all ease 0.4s;
+}
+.project-workflow-item .name:hover {
+  color: var(--main-color);
+  transform: translateX(-10px);
+}
+html[dir=ltr] .project-workflow-item .name:hover {
+  transform: translateX(15px);
 }
 @media only screen and (max-width: 767px) {
   .project-workflow-item .name {
