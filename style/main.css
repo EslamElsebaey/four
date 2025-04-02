@@ -723,7 +723,7 @@ html[dir=ltr] .footer-item .links-list .link:hover {
 }
 @media only screen and (max-width: 767px) {
   html[dir=ltr] .nav-list:first-of-type {
-    gap: 15px;
+    gap: 12px;
   }
 }
 .nav-list:nth-of-type(2) {
