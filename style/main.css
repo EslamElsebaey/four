@@ -1418,7 +1418,7 @@ html[dir=ltr] .main::after {
 }
 @media only screen and (max-width: 767px) {
   .main-wrapper {
-    gap: 25px;
+    gap: 22px;
   }
 }
 .main-wrapper .info-title {
@@ -1441,7 +1441,7 @@ html[dir=ltr] .main-wrapper .info-title {
 @media only screen and (max-width: 767px) {
   .main-wrapper .info-title {
     font-size: 30px;
-    line-height: 1.5;
+    line-height: 1.4;
     margin-bottom: 15px;
   }
 }

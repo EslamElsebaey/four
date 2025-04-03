@@ -57,7 +57,7 @@
     align-items: flex-start;
   }
   @include max-768 {
-    gap: 25px;
+    gap: 22px;
   }
   .info-title {
     color: #e7e0db;
@@ -75,7 +75,7 @@
     }
     @include max-768 {
       font-size: 30px;
-      line-height: 1.5;
+      line-height: 1.4;
       margin-bottom: 15px;
     }
   }
@@ -120,7 +120,7 @@
   }
   background-color: #fff;
   @extend %flex-center;
-  @include max-1400{
+  @include max-1400 {
     height: 580px;
   }
   @include max-1200 {
