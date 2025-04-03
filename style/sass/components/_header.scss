@@ -243,6 +243,9 @@
   display: flex;
   align-items: center;
   gap: 15px;
+  @include en {
+    gap: 25px;
+  }
   .openNavBtn {
     @include min-1200 {
       display: none;
@@ -298,7 +301,7 @@
       padding: 20px;
     }
     @include max-768 {
-      padding: 5px 15px 10px;
+      padding: 8px 15px 10px;
       line-height: 2;
     }
     &:hover {
@@ -313,5 +316,8 @@
   }
   a.ar {
     font-family: "Simah pro Arabic";
+    @include max-768 {
+      padding-top: 0;
+    }
   }
 }
