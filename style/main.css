@@ -2547,6 +2547,14 @@ html[dir=ltr] .project-workflow-item .name:hover {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .map-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .map-cats-list {
   gap: 11px;
   border-radius: 10px;
@@ -2561,8 +2569,7 @@ html[dir=ltr] .project-workflow-item .name:hover {
 }
 @media only screen and (max-width: 767px) {
   .map-cats-list {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-inline: 15px;
   }
 }
 .map-cats-list .catBtn {

@@ -16,14 +16,9 @@ window.addEventListener("load", function () {
   //**************************************************************************************************
 
   // Aos Animate
- AOS.init({
-   once: true,
- });
-
-
-
-
-
+  AOS.init({
+    once: true,
+  });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -64,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+  // VR tech Swiper
   const TechSwiper = new Swiper(".vr-tech .swiper", {
     loop: true,
     autoplay: true,
@@ -99,12 +95,16 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  // Projects Workflow Swiper
+  // Clients Swiper
   const clientsSwiper = new Swiper(".clients .swiper", {
+    // delay: 100,
     loop: true,
-    autoplay: true,
+    autoplay: {
+      delay: 700, // Autoplay delay in milliseconds
+      disableOnInteraction: false, // Optional: keeps autoplay after interaction
+    },
     draggable: true,
-    speed: 800,
+    speed: 700,
     pagination: {
       el: ".clients .swiper-pagination",
       clickable: true,
@@ -128,6 +128,36 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+
+  //**************************************************************************************************
+
+  // Achievement Counters
+  const achievementSection = document.querySelector(".achievements");
+  if (achievementSection) {
+    const sectionOffsetTop = achievementSection.offsetTop;
+    const windowHeight = window.innerHeight;
+    window.addEventListener("scroll", function () {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > sectionOffsetTop - windowHeight) {
+        const numberElements = document.querySelectorAll(".num-item .num");
+        const interval = 3000;
+        numberElements.forEach((numberElement) => {
+          if (numberElement.textContent == 0) {
+            let startValue = 0;
+            const endValue = parseInt(numberElement.dataset.num);
+            const duration = Math.floor(interval / endValue);
+            const counter = setInterval(() => {
+              startValue++;
+              numberElement.textContent = startValue;
+              if (startValue === endValue) {
+                clearInterval(counter);
+              }
+            }, duration);
+          }
+        });
+      }
+    });
+  }
 
   //**************************************************************************************************
   //  Mobile Menu
