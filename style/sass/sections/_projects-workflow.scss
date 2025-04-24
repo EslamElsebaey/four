@@ -76,12 +76,11 @@
     padding-inline-end: 15px;
     text-align: start;
     transition: all ease 0.4s;
-    &:hover{
+    &:hover {
       color: var(--main-color);
       transform: translateX(-10px);
       @include en {
-      transform: translateX(15px);
-
+        transform: translateX(15px);
       }
     }
     @include max-768 {
@@ -92,6 +91,12 @@
       width: 90%;
       padding: 0;
       text-align: center;
+      &:hover {
+        transform: translateX(-50%);
+        @include en {
+          transform: translateX(-50%);
+        }
+      }
     }
   }
 }

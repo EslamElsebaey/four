@@ -2198,6 +2198,12 @@ html[dir=ltr] .project-workflow-item .name:hover {
     padding: 0;
     text-align: center;
   }
+  .project-workflow-item .name:hover {
+    transform: translateX(-50%);
+  }
+  html[dir=ltr] .project-workflow-item .name:hover {
+    transform: translateX(-50%);
+  }
 }
 
 .current-projects {
