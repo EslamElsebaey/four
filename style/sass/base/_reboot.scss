@@ -15,13 +15,13 @@
 .darkmode {
   background-color: #121212;
   // background-image: none;
-  --light-color: #151515;
+  --light-color: #1a1a1a;
   --main-color: #897261;
-  --light-grey-color: #151515;
+  --light-grey-color: #1a1a1a;
   --black-color: #fff;
-  --white-color: #151515;
+  --white-color: #1a1a1a;
   --second-light-color: #838383;
-  --second-white-color: #151515;
+  --second-white-color: #1a1a1a;
   --dark-grey-color: #fff;
   .achievements::after {
     filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(1843%)
