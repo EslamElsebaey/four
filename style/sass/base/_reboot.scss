@@ -14,7 +14,6 @@
 
 .darkmode {
   background-color: #121212;
-  // background-image: none;
   --light-color: #1a1a1a;
   --main-color: #897261;
   --light-grey-color: #1a1a1a;
@@ -71,9 +70,6 @@ body {
   @include en {
     font-family: "Bahij TheSansArabic";
   }
-  // @include max-768 {
-  //   overflow-x: hidden;
-  // }
 }
 
 *,

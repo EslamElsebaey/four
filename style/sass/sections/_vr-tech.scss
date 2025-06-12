@@ -41,7 +41,6 @@
       transition: all ease 0.5s;
       @include max-768 {
         height: 350px;
-        // aspect-ratio: unset;
       }
     }
     .img-360 {
@@ -82,7 +81,6 @@
     .swiper-pagination-bullet {
       background-color: #d9d9d9;
       opacity: 1;
-      //   border: 1px solid #b6b6b6;
       &.swiper-pagination-bullet-active {
         background-color: var(--main-color);
       }
@@ -103,8 +101,6 @@
     @include max-768 {
       height: auto;
     }
-    // width: 650px;
-    // margin-left: 30px;
   }
 
   .swiper-button-next,

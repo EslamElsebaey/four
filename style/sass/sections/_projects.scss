@@ -1,7 +1,6 @@
 .projects {
   padding-block: 144px;
   position: relative;
-  // overflow: hidden;
   @include max-768 {
     padding-block: 60px;
   }
@@ -121,7 +120,6 @@
     .project-details {
       opacity: 1;
       visibility: visible;
-      // transform: scale(1);
     }
     .project-details-wrapper .details-item {
       opacity: 1;
@@ -140,7 +138,6 @@
     padding-inline: 121px;
     opacity: 0;
     visibility: hidden;
-    // transform: scale(0.95);
     transition: all ease 0.4s;
     @include max-1400 {
       padding-inline: 50px;
